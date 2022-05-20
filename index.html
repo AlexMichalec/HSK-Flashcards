@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kitajski</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="counter" id="counterTotal">
+        0
+    </div>
+    <div class="counter" id="counterSession">
+        0
+    </div>
+    <div id="settings">
+        <label class="container">HSK1
+            <input id="hsk1" type="checkbox" checked="checked" onchange="setLevel(1)">
+            <span class="checkmark"></span>
+        </label>
+        <label class="container">HSK2
+            <input id="hsk2" type="checkbox" checked="checked" onchange="setLevel(2)">
+            <span class="checkmark"></span>
+        </label>
+        <label class="container">HSK3
+            <input id="hsk3" type="checkbox" checked="checked" onchange="setLevel(3)">
+            <span class="checkmark"></span>
+        </label>
+        <label class="container">HSK4
+            <input id="hsk4" type="checkbox" checked="checked" onchange="setLevel(4)">
+            <span class="checkmark"></span>
+        </label>
+        <label class="container">HSK5
+            <input id="hsk5" type="checkbox" onchange="setLevel(5)">
+            <span class="checkmark"></span>
+        </label>
+        <label class="container">HSK6
+            <input id="hsk6" type="checkbox" onchange="setLevel(6)">
+            <span class="checkmark"></span>
+        </label>
+    </div>
+    <div id="hanzi">
+        
+    </div>
+    <div id="back" onclick="schowaj()">
+
+    </div>
+
+        <div id="question">
+            <button class = "qinfo" id="qlevel">HSK1</button>
+            <button class = "qinfo" id="qhan">公共汽车</button>
+            <button class = "qinfo" id="qhint">HINT</button>
+            <button class = "qinfo" id="qmore"><a id="mdbg" href="https://www.mdbg.net/chinese/dictionary?page=worddict&wdrst=0&wdqb=wa" target="_blank" rel="noopener noreferrer">?</a></button>
+            <div id="qanswers">
+            <button class = "qan" id="qan0">JA</button>
+            <button class = "qan" id="qan1">ty</button>
+            <button class = "qan" id="qan2">on</button>
+            <button class = "qan" id="qan3">oni</button>
+            </div>
+    </div>
+
+    <div id="reset_div">
+        <button id="reset" onclick="reset()" title="Reset Flashcards">reset</button>
+    </div>
+
+
+
+    <script src="baza.js"></script>
+    <script src="index.js"></script>
+
+</body>
+</html>
