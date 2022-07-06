@@ -30,7 +30,7 @@ body {
 #reset_div {
     position: fixed;
     bottom: 5%;
-    left: 45%
+    left: 47%
 
 }
 
@@ -250,4 +250,25 @@ a {
     -webkit-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
+}
+
+#saveHSK {
+    background-color:rgb(205, 63, 63);
+    border: 0;
+    font-size: 18px;
+    color: white;
+    margin-right: 10px;
+    text-transform: uppercase;
+    opacity: 70%;
+    padding: 5px 10px;
+    visibility: hidden;
+}
+
+#saveHSK:hover {
+    opacity: 100%;
+}
+
+#nic {
+    visibility: hidden;
+
 }
