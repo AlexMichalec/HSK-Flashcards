@@ -17,8 +17,6 @@ for(let i=1;i<=6;++i){
     if(zakres[i-1]!=0)
     {
         document.getElementById("hsk"+i).checked="checked"
-        console.log("hsk"+i)
-        console.log(zakres)
     }
 }
 const hanzi = document.getElementById("hanzi")
@@ -26,7 +24,6 @@ let tab=[]
 let score = localStorage.getItem("score")
 if (score != null)
     document.getElementById("counterTotal").innerText = score
-console.log("wynik: " + score)
 for (let i=0;i<numHanzi;++i){
     let temp = Math.floor(Math.random()*5000)
     while (!zakres.includes(bigtab[temp][3])||tab.includes(temp))
@@ -102,7 +99,6 @@ function wrong(){
 }
 
 function setAns(qType,num){
-    console.log(num)
     qType = 1+(qType)%2
     const przes = Math.floor(Math.random()*4)
     let correctAns = bigtab[num][qType]
@@ -111,7 +107,6 @@ function setAns(qType,num){
     document.getElementById("qan"+przes).innerText += "..."
     document.getElementById("qan"+przes).onclick = right
     for(let i=1;i<4;++i){
-        console.log(przes + " " + (przes+i)%4)
         let elem = document.getElementById("qan"+((przes+i)%4))
         let temp = Math.floor(Math.random()*5000)
         while(bigtab[temp][0].length!=bigtab[num][0].length||temp==num)
